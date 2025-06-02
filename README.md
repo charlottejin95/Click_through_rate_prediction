@@ -46,7 +46,7 @@ The model performance is primarily measured using:
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/ctr-prediction-xgboost.git
+    git clone https://github.com/charlottejin95/Click_through_rate_prediction.git
     cd ctr-prediction-xgboost
     ```
 
@@ -57,7 +57,7 @@ The model performance is primarily measured using:
 
 3. Run the Jupyter notebook or Python script:
     ```bash
-    jupyter notebook CTR_Prediction_XGBoost.ipynb
+    jupyter notebook Click_through_rate_prediction.ipynb
     ```
 
 ---
