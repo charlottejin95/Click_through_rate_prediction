@@ -13,8 +13,8 @@ This project tackles the **Click-Through Rate (CTR) Prediction** problem using m
 
 ## Model
 
-We use **XGBoost**, a powerful gradient boosting algorithm, to train a binary classifier for predicting ad clicks.
-We also use **Wide and Deep Neural Network** to train the binary classifier. The model combines wide features (dense, hand-engineered inputs) and deep features (sparse categorical inputs transformed via embedding layers), allowing it to learn both memorization (via wide part) and generalization (via deep part). The embedded features are passed through a series of dense layers, then concatenated with the wide input and passed to a final output layer for prediction.
+- We use **XGBoost**, a powerful gradient boosting algorithm, to train a binary classifier for predicting ad clicks.
+- We also use **Wide and Deep Neural Network** to train the binary classifier. The model combines wide features (dense, hand-engineered inputs) and deep features (sparse categorical inputs transformed via embedding layers), allowing it to learn both memorization (via wide part) and generalization (via deep part). The embedded features are passed through a series of dense layers, then concatenated with the wide input and passed to a final output layer for prediction.
 
 
 ### Key Features of the Model:
