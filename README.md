@@ -1,6 +1,6 @@
 # Click-Through Rate Prediction
 
-This project tackles the **Click-Through Rate (CTR) Prediction** problem using machine learning, specifically the **XGBoost classifier, Wide and Deep Neural Network**. The dataset comes from the [Kaggle CTR Prediction Competition](https://www.kaggle.com/c/avazu-ctr-prediction/overview) sponsored by **Avazu**, which provides ad click logs over 10 days. The objective is to **predict the probability** that a mobile ad will be clicked.
+This project tackles the **Click-Through Rate (CTR) Prediction** problem using machine learning, specifically the **XGBoost classifier, Wide and Deep Neural Network, Deep Factorization Machine (DeepFM)**. The dataset comes from the [Kaggle CTR Prediction Competition](https://www.kaggle.com/c/avazu-ctr-prediction/overview) sponsored by **Avazu**, which provides ad click logs over 10 days. The objective is to **predict the probability** that a mobile ad will be clicked.
 
 
 ## Dataset
@@ -14,7 +14,8 @@ This project tackles the **Click-Through Rate (CTR) Prediction** problem using m
 ## Model
 
 - We use **XGBoost**, a powerful gradient boosting algorithm, to train a binary classifier for predicting ad clicks.
-- We also use **Wide and Deep Neural Network** to train the binary classifier. The model combines wide features (dense, hand-engineered inputs) and deep features (sparse categorical inputs transformed via embedding layers), allowing it to learn both memorization (via wide part) and generalization (via deep part). The embedded features are passed through a series of dense layers, then concatenated with the wide input and passed to a final output layer for prediction.
+- We use **Wide and Deep Neural Network** to train the binary classifier. The model combines wide features (dense, hand-engineered inputs) and deep features (sparse categorical inputs transformed via embedding layers), allowing it to learn both memorization (via wide part) and generalization (via deep part). The embedded features are passed through a series of dense layers, then concatenated with the wide input and passed to a final output layer for prediction.
+- We use **DeepFM** in the training process, which can learn both simple (low-order) and complex (high-order) feature relationships simultaneously, which usually leads to better prediction accuracy in tasks like CTR prediction.
 
 
 ### Key Features of the Model:
@@ -39,6 +40,7 @@ The model performance is primarily measured using:
 
 - Python (3.8+)
 - Pytorch
+- deepctr-torch
 - scikit-learn
 - XGBoost
 - CUDA GPU training
